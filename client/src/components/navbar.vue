@@ -32,8 +32,8 @@ function toggleMenu() {
         Home
       </RouterLink>
 
-      <RouterLink to="/documentation" class="navbar-item">
-        Documentation
+      <RouterLink to="/products" class="navbar-item">
+        Products
       </RouterLink>
 
       <div class="navbar-item has-dropdown is-hoverable">
