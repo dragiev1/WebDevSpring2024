@@ -1,6 +1,7 @@
 <script setup lang="ts">
     import {ref, computed} from 'vue'
     import { type Product, getProducts } from "@/model/products";
+    import ProductCard from '@/components/ProductCard.vue';
     
     
     const products = ref([] as Product[])
@@ -30,18 +31,10 @@
 
 <template>
     <div class="product-list">
-        <div v-for="product in products" :key="product.id" class="card">
-            <div class="card-image">
-                <img :src="product.thumbnail" alt="product.name" />
-            </div>
-            <div class="card-content">
-                <h3>{{ product.title }}</h3>
-                <i>{{ product.brand }}</i>
-                <p>{{ product.description }}</p>
-                <p class="price">${{ product.price }}</p>
-                <button @click="addToCart(product)" class="button is-primary">Add to Cart</button>
-            </div>
-        </div>
+        <ProductCard    v-for="product in products" 
+                        :key="product.id" 
+                        :product="product" @addToCart = "addToCart" 
+                    />
     </div>
 
     <div class="flyout">
