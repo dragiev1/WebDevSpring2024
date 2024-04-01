@@ -27,6 +27,7 @@ import type { Product } from '@/model/products';
 </template>
 
 <style scoped>
+<<<<<<< HEAD
     .card {
         flex-basis: 15rem;
         flex-grow: 1;
@@ -42,4 +43,7 @@ import type { Product } from '@/model/products';
         color: red;
         float: right;
     }
+=======
+
+>>>>>>> b2abc149debd2f3c0377a229e45dc51ba98f7227
 </style>

@@ -22,7 +22,7 @@
         padding: 1rem;
         z-index: 100;
         box-shadow: -1px 0 5px 10 rgba(0, 0, 0, 0.25);
-        transform: translateX(80%);
+        transform: translateX(90%);
         transition: transform 1s;
     }
     .flyout.open, .flyout:hover {
